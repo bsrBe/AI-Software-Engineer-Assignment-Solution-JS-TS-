@@ -11,6 +11,12 @@ This repository contains the solution for the AI Software Engineer assignment. I
 - `tests/`: Vitest test suite
 - `Dockerfile`: Container configuration for CI-style execution
 - `Explanation.md`: Detailed analysis of the fixed bug
+- `package.json`: Project dependencies and scripts
+- `package-lock.json`: Lock file for dependencies
+- `.dockerignore`: Files to ignore when building the Docker image
+- `README.md`: Project documentation
+- `Explanation.md`: Detailed analysis of the fixed bug
+
 ```text
 .
 ├── Dockerfile
@@ -33,5 +39,17 @@ This repository contains the solution for the AI Software Engineer assignment. I
 
 2. **Run tests**:
    ```bash
-   npm test 
+   npm test
+   ```
+
+## How to Build and Run with Docker
+
+1. **Build the Docker image**:
+   ```bash
+   docker build -t eskalate-assignment:1.0.0 .
+   ```
+
+2. **Run the tests in a container**:
+   ```bash
+   docker run eskalate-assignment:1.0.0
    ```
